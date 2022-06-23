@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Layout = ({ children }) => {
-  const documentationUrl = process.env.DocumentationUrl;
+  const documentationUrl = process.env.NEXT_PUBLIC_DOCUMENTATION_URL;
 
   return (
     <React.Fragment>
