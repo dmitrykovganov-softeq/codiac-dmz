@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 const Layout = ({ children }) => {
+  const documentationUrl = process.env.DocumentationUrl;
+
   return (
     <React.Fragment>
       <nav>
@@ -14,7 +16,7 @@ const Layout = ({ children }) => {
         <Link href={'/about'}>
           <a>about</a>
         </Link>
-        <Link href={'http://localhost:3000'}>
+        <Link href={documentationUrl}>
           <a>documentation</a>
         </Link>
       </nav>

@@ -28,6 +28,9 @@ module.exports = {
     });
     return configuration;
   },
+  env: {
+    DocumentationUrl: 'http://localhost:3000',
+  },
   async exportPathMap(defaultPathMap) {
     return {
       ...defaultPathMap,
