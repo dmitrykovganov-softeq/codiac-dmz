@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const BLOG_POSTS_PATH = '../../content/blogPosts';
 
@@ -31,9 +32,9 @@ export default class Blog extends Component {
       <div className="blog-list">
         {postsList.map(post => {
           return (
-            <Link href={`blog/post/${post.slug}`}>
+            <Link key={post.slug} href={`blog/post/${post.slug}`}>
               <a>
-                <img src={post.attributes.thumbnail} />
+                <Image src={post.attributes.thumbnail} alt="me" width="64" height="64" />
                 <h2>{post.attributes.title}</h2>
               </a>
             </Link>
