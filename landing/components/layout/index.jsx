@@ -14,6 +14,9 @@ const Layout = ({ children }) => {
         <Link href={'/about'}>
           <a>about</a>
         </Link>
+        <Link href={'http://localhost:3000'}>
+          <a>documentation</a>
+        </Link>
       </nav>
       <main>{children}</main>
       <style jsx global>{`
